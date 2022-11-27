@@ -39,3 +39,19 @@ let getJSONData = function(url){
         return result;
     });
 }
+
+
+
+    /*Se obtiene el item del localStorage (los datos ingresados del usuario) y se guarda en una variable*/
+let valueUser = JSON.parse(localStorage.getItem("myuser"));
+
+  /* Agrega el valor del usuario (su e-mail) en el navbar, obteniendo la id de un div contenedor y el 4to elemento de la lista */
+document.getElementById("navbarNav").getElementsByTagName("li")[3].innerHTML = `<a class="nav-link">${valueUser}</a>`
+
+  // Modifica un atributo del 1er anchor para que el usuario al cliquear "inicio" sea redirigido al homepage del sitio (Ésto no corresponde a la Entrega 2):
+document.getElementById("navbarNav").getElementsByTagName("a")[0].setAttribute("href", "home.html");
+
+  
+
+
+
