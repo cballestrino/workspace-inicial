@@ -6,6 +6,9 @@ let currentSortCriteria = undefined;
 let minCount = undefined;
 let maxCount = undefined;
 
+//Imprime la URL de la API en la consola (Entrega 8: Mostrar la dir. del localhost donde están los datos)
+console.log(CATEGORIES_URL)
+
 function sortCategories(criteria, array){
     let result = [];
     if (criteria === ORDER_ASC_BY_NAME)
